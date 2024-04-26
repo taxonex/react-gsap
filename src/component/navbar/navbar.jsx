@@ -94,7 +94,7 @@ function Navbar() {
           <a href="" ref={manuhome}>
             Home
           </a>
-          <a href="/about" ref={manuabour}>
+          <a href="https://myportfolio-rohit.vercel.app" ref={manuabour}>
             About
           </a>
           <a href="/contact" ref={manucontact}>
