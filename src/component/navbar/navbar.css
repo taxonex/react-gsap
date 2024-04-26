@@ -1,0 +1,118 @@
+#navbar-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+#nav-firstprt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 0px;
+}
+#nav-secontprt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#manu-link {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#navright {
+  display: flex;
+  align-items: center;
+}
+#search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.searchicon,
+.closeicon {
+  font-size: 18px;
+  color: rgb(201, 201, 201);
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.25s ease;
+}
+.closeicon {
+  color: transparent;
+  z-index: -1;
+}
+.search-box {
+  width: 20px;
+  height: 29px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 14px;
+  visibility: hidden;
+  transition: width 0.25s ease;
+}
+.active .search-box {
+  width: 250px;
+  visibility: visible;
+  background-color: aliceblue;
+  padding: 0px 20px 0px 20px;
+}
+.active .searchicon {
+  left: 3px;
+}
+.active .closeicon {
+  z-index: 3;
+  transform: translate(225px, 1px);
+  color: red;
+}
+#user {
+  margin: 0px 3vw 0px 10px;
+}
+#nav-open {
+  position: absolute;
+  right: 2vw;
+}
+#datafetchSearch{
+  position: absolute;
+  top: 30px;
+  background-color: aliceblue;
+  width: 100%;
+  z-index: 9999999;
+}
+#datafetchSearch ul li{
+  color: rgb(88, 88, 88);
+  list-style: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+}
+#datafetchSearch ul li img{
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  object-fit: cover;
+  border-radius: 1px solid rgb(116, 116, 116);
+  border-radius: 100%;
+}
+
+@media (max-width:400px) {
+    .active .search-box{
+        width: 100%;
+        margin-left: 5px;
+    }
+    .active .searchicon {
+        margin-left: 6px;
+    }
+    .active .closeicon{
+        right: 0;
+        transform: translate(1px);
+        margin-right: 7px;
+    }
+}
