@@ -19,6 +19,7 @@ body {
   -ms-user-select: none;
   scroll-behavior: smooth;
   scrollbar-color: transparent transparent;
+   overflow-x: hidden;
 }
 
 body img{
